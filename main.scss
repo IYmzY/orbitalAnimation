@@ -4,8 +4,8 @@ body {
 /* ---------- Container for the orbiting circles animation ---------- */
 #circle-orbit-container {
   position: relative;
-  top: 30vh;
-  left: 30vw;
+  top: 20vh;
+  left: 33vw;
   height: 437px;
   width: 437px;
 }
@@ -19,8 +19,8 @@ body {
   height: 130.26px;
   border: 2px #dfe4ec solid;
   border-radius: 100%;
-  -webkit-animation: spin-right 10s linear infinite;
-  animation: spin-right 10s linear infinite;
+  -webkit-animation: spin-right 5s linear infinite;
+  animation: spin-right 5s linear infinite;
 }
 
 /* ---------- Repeating styles for the inner orbiting circles ---------- */
@@ -43,8 +43,8 @@ body {
   height: 238.85px;
   border: 2px #dfe4ec solid;
   border-radius: 100%;
-  -webkit-animation: spin-right 15s linear infinite;
-  animation: spin-right 15s linear infinite;
+  -webkit-animation: spin-right 10s linear infinite;
+  animation: spin-right 10s linear infinite;
 }
 
 /* ---------- Repeating styles for the inner orbiting circles ---------- */
@@ -67,8 +67,8 @@ body {
   height: 437px;
   border: 2px #dfe4ec solid;
   border-radius: 100%;
-  -webkit-animation: spin-right 20s linear infinite;
-  animation: spin-right 20s linear infinite;
+  -webkit-animation: spin-left 25s linear infinite;
+  animation: spin-left 25s linear infinite;
 }
 
 /* ---------- Repeating styles for the outer orbiting circles ---------- */
@@ -99,5 +99,14 @@ body {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+@keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
